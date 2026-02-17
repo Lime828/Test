@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- MOBILE FIRST VIEWPORT -->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+    <title>AVDTech · Official AI</title>
+    <!-- Font & Icons - Minimal -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* ---------- MOBILE-FIRST, ABSOLUTELY MINIMAL ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #f8faf8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 0;
+            color: #1e2e1c;
+        }
+
+        .chat-container {
+            width: 100%;
+            max-width: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            max-height: 100vh;
+            border: none;
+            box-shadow: none;
+        }
+
+        @media (min-width: 768px) {
+            body {
+                padding: 1.5rem;
+                background: #f0f5ec;
+            }
+
+            .chat-container {
+                max-width: 800px;
+                height: 85vh;
+                max-height: 800px;
+                border-radius: 28px;
+                border: 1px solid #e0ebe0;
+                box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+            }
+        }
+
+        /* ---------- SIMPLE HEADER ---------- */
+        .chat-header {
+            padding: 1rem 1.25rem;
+            border-bottom: 1px solid #ecf3e8;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: white;
+            flex-shrink: 0;
+        }
+
+        .company {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .company-icon {
+            background: #f59e2a;
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .company-name {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0a3b2a;
+        }
+
+        .company-tag {
+            font-size: 0.7rem;
+            color: #f59e2a;
+            background: #fff1e0;
+            padding: 2px 8px;
+            border-radius: 30px;
+            margin-left: 6px;
+        }
+
+        .status {
+            font-size: 0.7rem;
+            color: #2e7d32;
+            background: #edf7ed;
+            padding: 5px 12px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            white-space: nowrap;
+        }
+
+        /* ---------- CHAT WINDOW ---------- */
+        .chat-window {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.25rem;
+            background: #ffffff;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .message {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            max-width: 90%;
+        }
+
+        .message.bot {
+            align-self: flex-start;
+        }
+
+        .message.user {
+            align-self: flex-end;
+            flex-direction: row-reverse;
+        }
+
+        .avatar {
+            width: 32px;
+            height: 32px;
+            background: #1a5a41;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .avatar.user-avatar {
+            background: #e67e2a;
+        }
+
+        .bubble {
+            background: #f8faf7;
+            padding: 1rem 1.25rem;
+            border-radius: 18px 18px 18px 4px;
+            border: 1px solid #e2ecda;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: #1e382a;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            width: 100%;
+            white-space: pre-wrap;
+        }
+
+        .message.user .bubble {
+            background: #fff6e9;
+            border: 1px solid #fadbad;
+            border-radius: 18px 18px 4px 18px;
+        }
+
+        /* ---------- CLEAN, PROFESSIONAL RESPONSE FORMATTING ---------- */
+        .greeting {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0f583c;
+            margin-bottom: 0.75rem;
+        }
+
+        .name-input-box {
+            background: #edf7ed;
+            border-radius: 16px;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            border: 1px solid #c8e0b6;
+            flex-wrap: wrap;
+        }
+
+        .name-input-box input {
+            flex: 1;
+            border: 1px solid #b8d6a8;
+            border-radius: 30px;
+            padding: 0.8rem 1rem;
+            font-size: 0.95rem;
+            background: white;
+            outline: none;
+            min-width: 180px;
+        }
+
+        .name-input-box input:focus {
+            border-color: #f59e2a;
+            box-shadow: 0 0 0 2px #ffe4cc;
+        }
+
+        .name-btn {
+            background: #f59e2a;
+            border: none;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .typing {
+            display: flex;
+            padding: 0.8rem 1.2rem;
+            background: #f8faf7;
+            border-radius: 24px;
+            border: 1px solid #deecdb;
+            align-items: center;
+            gap: 6px;
+            width: fit-content;
+        }
+
+        .typing span {
+            width: 6px;
+            height: 6px;
+            background: #f59e2a;
+            border-radius: 50%;
+            display: inline-block;
+            animation: pulse 1.4s infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 0.4;
+            }
+
+            50% {
+                opacity: 1;
+            }
+        }
+
+        /* ---------- INPUT AREA ---------- */
+        .input-area {
+            padding: 0.9rem 1.25rem;
+            background: white;
+            border-top: 1px solid #ecf3e8;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .input-wrapper {
+            flex: 1;
+            background: #f5f8f4;
+            border-radius: 30px;
+            padding: 2px 2px 2px 16px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #e0eade;
+        }
+
+        .input-wrapper input {
+            flex: 1;
+            border: none;
+            background: transparent;
+            padding: 12px 6px 12px 0;
+            font-size: 0.95rem;
+            color: #1e422a;
+            outline: none;
+            width: 100%;
+        }
+
+        .input-wrapper input::placeholder {
+            color: #8aa08a;
+        }
+
+        .send-btn {
+            background: #1a5a41;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .voice-btn {
+            background: #f59e2a;
+            border: none;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .voice-btn.listening {
+            background: #da6e1d;
+            animation: pulse-voice 1.5s infinite;
+        }
+
+        @keyframes pulse-voice {
+            0% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 42, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(245, 158, 42, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(245, 158, 42, 0);
+            }
+        }
+
+        /* ---------- FOOTER ---------- */
+        .chat-footer {
+            padding: 0.7rem 1.25rem 0.9rem;
+            background: white;
+            border-top: 1px solid #ecf3e8;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.65rem;
+            color: #6a8f70;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .footer-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .footer-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .voice-indicator {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            color: #f59e2a;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .auto-speak {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .auto-speak input {
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+            accent-color: #f59e2a;
+        }
+
+        @media (max-width: 480px) {
+            .chat-header {
+                padding: 0.8rem 1rem;
+            }
+
+            .company-name {
+                font-size: 1.1rem;
+            }
+
+            .input-area {
+                padding: 0.8rem 1rem;
+            }
+
+            .chat-footer {
+                padding: 0.6rem 1rem;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .footer-right {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .name-input-box {
+                flex-direction: column;
+            }
+
+            .name-btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="chat-container">
+        <!-- HEADER - AVDTech First -->
+        <div class="chat-header">
+            <div class="company">
+                <div class="company-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <div class="company-name">
+                    AVDTech <span class="company-tag">SEC Reg'd</span>
+                </div>
+            </div>
+            <div class="status">
+                <i class="fas fa-circle" style="color: #43a047; font-size: 0.5rem;"></i>
+                Live
+            </div>
+        </div>
+
+        <!-- CHAT WINDOW -->
+        <div class="chat-window" id="chatWindow"></div>
+
+        <!-- INPUT AREA -->
+        <div class="input-area">
+            <div class="input-wrapper">
+                <input type="text" id="userInput" placeholder="Ask about AVDTech products..." autofocus>
+                <button class="send-btn" id="sendBtn">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <button class="voice-btn" id="micBtn" title="Tap to speak">
+                <i class="fas fa-microphone"></i>
+            </button>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="chat-footer">
+            <div class="footer-left">
+                <span class="disclaimer-text">No income guarantees · Not a kWh saver</span>
+                <span>SEC 2024070160108-00</span>
+            </div>
+            <div class="footer-right">
+                <div class="voice-indicator" id="voiceStatus">
+                    <i class="fas fa-microphone"></i> Ready
+                </div>
+                <label class="auto-speak">
+                    <input type="checkbox" id="autoSpeakCheckbox"> Auto
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            "use strict";
+
+            // ---------- API CONFIG ----------
+            const OPENROUTER_API_KEY = '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';
+            const API_URL = 'https://openrouter.ai/api/v1/chat/completions';
+            const MODEL_NAME = 'deepseek/deepseek-chat';
+
+            // ---------- VOICE SETUP ----------
+            const synth = window.speechSynthesis;
+            let recognition = null;
+            let isListening = false;
+            let autoSpeak = false;
+            let lastBotResponse = '';
+
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = 'fil-PH';
+            }
+
+            // ---------- USER DATA ----------
+            let userName = '';
+            let nameAsked = false;
+
+            // ---------- DOM ----------
+            const chatWindow = document.getElementById('chatWindow');
+            const userInput = document.getElementById('userInput');
+            const sendBtn = document.getElementById('sendBtn');
+            const micBtn = document.getElementById('micBtn');
+            const voiceStatus = document.getElementById('voiceStatus');
+            const autoSpeakCheckbox = document.getElementById('autoSpeakCheckbox');
+
+            // ---------- SYSTEM PROMPT - AVDTech FIRST, N+ as OPTIONAL ----------
+            const SYSTEM_PROMPT = `You are the Official AI Business Consultant for AVDTech International.
+
+ABSOLUTE RULES:
+1. NEVER claim device reduces kWh. It's a POWER QUALITY device (power factor correction, voltage regulation, appliance protection).
+2. NEVER guarantee income. Always include income disclaimer.
+3. ALWAYS use customer's name ({{userName}}) when known.
+4. PRIORITY: AVDTech products and business opportunity come FIRST.
+5. N+ is OPTIONAL - only mention when user asks about it or as a helpful tool for members.
+6. CLOSING THE SALE / ORDERING / CONTACTING ADMIN: Kapag handa na ang user bumili, mag-join, o gustong makausap ang admin (admin/buy now/product/package), i-direct sila sa mga link na ito:
+- Para sa Product/Package Purchase: https://m.me/151078995084334
+- Para sa Admin Support/Inquiries: https://www.facebook.com/eliveextreme
+Sabihin na ang aming admin ang mag-a-assist sa kanila for the order process, payment details, and shipping. Siguraduhin na i-include ang mga links na ito sa iyong reply. Huwag gumamit ng bold symbols gaya ng ** sa iyong sagot.
+
+RESPONSE STYLE - VERY IMPORTANT:
+- BE EXCITED ALWAYS! 🔥 Gumamit ng exclamation points (!) at energetic Taglish words gaya ng "Grabe!", "Solid!", "Wow!", "Exciting 'to!", etc.
+- BE CLICKBAITY BUT TRUE! 🎯 Gumamit ng attention-grabbing hooks at phrases (halimbawa: "Alam mo ba na pwedeng ma-protektahan ang appliances mo sa pinaka-affordable na paraan?") pero dapat laging totoo base sa guide.
+- Mag-reply gaya ng isang super friendly at hyper-active human consultant. Huwag na huwag maging robot.
+- LISTEN FIRST. Sagutin muna ang tanong o concerns ng user pero lagyan agad ng excitement!
+- DISCREET SALES LEAD: Humanap ng natural pero "wow" factor na pagkakataon para isingit ang AVDTech benefits.
+- Use TAGLISH na natural, masaya, at nakaka-hype pakinggan.
+- USE CLEAN TEXT ONLY. No markdown symbols like ### or **. Iwasan ang kahit anong complex formatting, just plain text with lots of EMOJIS! 🚀⚡🔥
+
+COMPANY INFORMATION - LEAD WITH THIS:
+AVDTech International is a duly SEC registered company (No. 2024070160108-00) in the Philippines, operating in the energy efficiency sector. Now on its 3rd year, with headquarters in Lipa City, Batangas and branches across 82 provinces nationwide.
+
+POWER EFFICIENCY ENHANCER - CORE PRODUCT:
+This is NOT an energy saver. It is a power quality improvement device that uses power factor correction and capacitor bank technology - the same standard used in commercial and industrial settings.
+
+MODELS AND PRICING (SRP):
+• 25UF: ₱5,498 - Recommended for 100-250 kWh monthly consumption
+• 50UF: ₱8,288 - Recommended for 300-550 kWh monthly consumption
+• 100UF: ₱19,488 - Recommended for 800-1350 kWh monthly consumption
+
+KEY BENEFITS:
+✓ Appliance protection from voltage fluctuations
+✓ Voltage regulation for stable electrical conditions
+✓ Surge protection against disturbances
+✓ Reduced electrical overheating in wires and breakers
+✓ Lower heat loss and improved system reliability
+✓ Reduced power system loss within premises
+✓ Reduced carbon footprint
+✓ Maintenance-free operation when correctly installed
+
+PROFESSIONAL INSTALLATION REQUIRED:
+Must be installed by certified electricians only - ensures proper sizing, safe connections, and compliance with electrical codes.
+
+LEGAL COMPLIANCE:
+• RA 11285 (Energy Efficiency and Conservation Act) - Aligned with national energy efficiency goals
+• RA 7394 (Consumer Act of the Philippines) - Proper labeling, truthful representation, no exaggerated claims
+
+BUSINESS OPPORTUNITY - 7 WAYS TO EARN:
+
+1. OUTRIGHT INCOME (Direct Selling):
+   Purchase at Distributor Price, sell at SRP. Example: Residential package SRP ₱5,498, Distributor Price ₱4,288 = ₱1,210 instant profit per unit.
+
+2. REFERRAL BONUS:
+   • Residential Package: ₱400 per direct referral
+   • Commercial Package: ₱1,000 per direct referral
+   • Industrial Package: ₱2,500 per direct referral
+   No limit on number of referrals.
+
+3. MATCHING POINT BONUS (Pairing Bonus):
+   Binary structure: Left leg and right leg.
+   Point Values: Residential = 1 PV, Commercial = 3 PV, Industrial = 7 PV
+   ₱1,000 per 1PV:1PV match. Excess PV carried forward.
+   
+   Daily Pairing Limits by Package:
+   • Residential: ₱3,000/day (up to ₱90,000/month)
+   • Commercial: ₱9,000/day (up to ₱270,000/month)
+   • Industrial: ₱21,000/day (up to ₱630,000/month)
+
+4. ONE LEG BONUS (Unique Advantage):
+   Earn 50% of the Matching Point Bonus earned by your 2nd to 25th direct referrals.
+   Example: If your direct referral earns ₱10,000 in pairing bonuses, you earn ₱5,000.
+   
+   Daily Limits:
+   • Residential: Up to ₱4,000/day
+   • Commercial: Up to ₱28,000/day
+   • Industrial: Up to ₱72,000/day
+
+5. CAPPING BONUS & REACTIVATION (Anti-Saturation System):
+   Income caps per cycle:
+   • Residential: ₱38,000
+   • Commercial: ₱100,000
+   • Industrial: ₱200,000
+   
+   Upon reaching cap, account requires reactivation or upgrade (purchase another package) to continue earning. This ensures sustainability and active product movement.
+
+6. SUBSCRIPTION BONUS (Unilevel Income):
+   After 60 days of membership, enroll in monthly subscription (₱750/month, includes Lakas Coffee).
+   Earn 2% per level on subscription purchases, up to 10 levels deep = 20% total unilevel income potential.
+   Creates monthly residual income based on repeat consumption.
+
+7. LEADERSHIP BONUS & PROFIT SHARING:
+   
+   Ranks and Requirements:
+   • Supervisor: 5 Direct Referrals → 3% Leadership Bonus
+   • Manager: 15 Direct Referrals → 5% Leadership Bonus
+   • Director: 25 Direct Referrals + Industrial Package → 10% Leadership Bonus + Global Pool Profit Sharing
+   
+   Global Pool: Every 5th pair contributes to company-wide profit sharing for Directors.
+
+PRODUCT PACKAGES:
+• Residential Package (1 PV): 25UF or 50UF unit
+• Commercial Package (3 PV): Combination of 25/50UF units or 1 unit 100UF
+• Industrial Package (7 PV): Combination of 25UF, 50UF, and 100UF units for higher load users
+
+N+ SYSTEM (OPTIONAL - ONLY MENTION WHEN ASKED OR AS HELPFUL TOOL):
+N+ (Networking + AI) is a complete, done-for-you business platform for AVDTech members. It is NOT a separate business opportunity.
+• One-time setup: ₱1,500
+• Monthly access: ₱300
+• Includes: Custom N+ system, Facebook Page, Lead Capture, Landing Page, AI Content, AI Agent 24/7, Human Admin Support
+• "Build once. Scale with AI. Duplicate forever."
+• This is OPTIONAL for members who want automation.
+
+INCOME DISCLAIMER (MUST ALWAYS INCLUDE):
+"Income results vary depending on individual effort, consistency, skill, and market conditions. AVDTech does not guarantee specific income. Maximum potentials shown are theoretical and not typical."
+
+PRODUCT DISCLAIMER (MUST ALWAYS INCLUDE):
+"This device is NOT an energy saver or power saver. It is a power quality improvement device that corrects power factor, stabilizes voltage, and protects appliances."
+
+Always prioritize AVDTech products and business opportunity. N+ is secondary and optional. Keep responses personal, clean, and well-organized.`;
+
+            // ---------- CONVERSATION HISTORY ----------
+            let conversationHistory = [{
+                role: 'system',
+                content: SYSTEM_PROMPT.replace('{{userName}}', 'there')
+            }];
+
+            function linkify(text) {
+                if (typeof text !== 'string') return text;
+                const urlRegex = /(https?:\/\/[^\s]+)/g;
+                return text.replace(urlRegex, function (url) {
+                    return `<a href="${url}" target="_blank" style="color: #1a5a41; text-decoration: underline; font-weight: 600;">${url}</a>`;
+                }).replace(/(^|\s)(m\.me\/[0-9a-zA-Z.]+)/g, function (match, p1, p2) {
+                    return `${p1}<a href="https://${p2}" target="_blank" style="color: #1a5a41; text-decoration: underline; font-weight: 600;">${p2}</a>`;
+                });
+            }
+
+            // ---------- ADD MESSAGE ----------
+            function addMessage(sender, content) {
+                if (content === undefined || content === null) content = '';
+                const messageDiv = document.createElement('div');
+                messageDiv.className = `message ${sender}`;
+
+                const avatarDiv = document.createElement('div');
+                avatarDiv.className = sender === 'bot' ? 'avatar' : 'avatar user-avatar';
+                avatarDiv.innerHTML = sender === 'bot' ? '<i class="fas fa-bolt"></i>' : '<i class="fas fa-user"></i>';
+
+                const bubbleDiv = document.createElement('div');
+                bubbleDiv.className = 'bubble';
+
+                // If it's bot message and doesn't look like complex HTML, linkify it
+                if (sender === 'bot' && typeof content === 'string' && !content.includes('<div') && !content.includes('<button')) {
+                    bubbleDiv.innerHTML = linkify(content);
+                } else {
+                    bubbleDiv.innerHTML = content;
+                }
+
+                messageDiv.appendChild(avatarDiv);
+                messageDiv.appendChild(bubbleDiv);
+                chatWindow.appendChild(messageDiv);
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+
+                if (sender === 'bot') {
+                    const tempDiv = document.createElement('div');
+                    tempDiv.innerHTML = content;
+                    lastBotResponse = tempDiv.textContent || tempDiv.innerText || '';
+
+                    if (autoSpeak) {
+                        speakText(lastBotResponse);
+                    }
+                }
+            }
+
+            // ---------- ASK FOR NAME ----------
+            function askForName() {
+                const nameHtml = `
+                <div class="greeting">👋 Welcome to AVDTech International!</div>
+                <p>I'm your official AI consultant. May I know your name? (Para mas personal ang ating pag-uusap)</p>
+                <div class="name-input-box">
+                    <input type="text" id="nameInput" placeholder="Enter your name" autocomplete="off">
+                    <button class="name-btn" id="submitNameBtn">Continue</button>
+                </div>
+            `;
+                addMessage('bot', nameHtml);
+                nameAsked = true;
+
+                setTimeout(() => {
+                    const nameInput = document.getElementById('nameInput');
+                    const submitBtn = document.getElementById('submitNameBtn');
+
+                    if (nameInput) {
+                        nameInput.focus();
+                        nameInput.addEventListener('keypress', (e) => {
+                            if (e.key === 'Enter') {
+                                e.preventDefault();
+                                setName(nameInput.value.trim());
+                            }
+                        });
+
+                        if (submitBtn) {
+                            submitBtn.addEventListener('click', () => {
+                                setName(nameInput.value.trim());
+                            });
+                        }
+                    }
+                }, 100);
+            }
+
+            // ---------- SET NAME AND SHOW WELCOME - AVDTech FOCUSED ----------
+            function setName(name) {
+                userName = name && name.trim() ? name.trim() : 'there';
+
+                // Update system prompt with name
+                conversationHistory[0].content = SYSTEM_PROMPT.replace('{{userName}}', userName);
+
+                const welcomeHtml = `
+GRABE! Kumusta, ${userName}! 👋 🚀
+
+SOBRANG SAYA na nandito ka sa AVDTech! I'm super excited na tulungan ka—gusto mo bang MALAGANAPAN ang iyong appliances laban sa sira? O baka naman ready ka na sa pinaka-SOLID na income source na trending ngayon? 🔥⚡
+
+Ano ba ang maipaglilingkod ko sa iyo ngayon na siguradong ikaka-wow mo? Share mo lang sa akin, dali! 😊🔥
+            `;
+
+                addMessage('bot', welcomeHtml);
+
+                if (autoSpeak) {
+                    speakText(`Nice to meet you, ${userName}! I'm your AVDTech AI consultant. Ask me about our power efficiency products and business opportunity.`);
+                }
+            }
+
+            // ---------- TYPING INDICATOR ----------
+            function showTyping() {
+                const typingDiv = document.createElement('div');
+                typingDiv.className = 'message bot';
+                typingDiv.id = 'typingIndicator';
+                typingDiv.innerHTML = `<div class="avatar"><i class="fas fa-bolt"></i></div>
+                                   <div class="typing"><span></span><span></span><span></span></div>`;
+                chatWindow.appendChild(typingDiv);
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+            }
+
+            function removeTyping() {
+                document.getElementById('typingIndicator')?.remove();
+            }
+
+            // ---------- SPEECH RECOGNITION ----------
+            function startListening() {
+                if (!recognition) {
+                    voiceStatus.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Not supported';
+                    return;
+                }
+
+                if (isListening) {
+                    recognition.stop();
+                    return;
+                }
+
+                try {
+                    recognition.start();
+                    isListening = true;
+                    micBtn.classList.add('listening');
+                    voiceStatus.innerHTML = '<i class="fas fa-microphone-alt"></i> Listening...';
+
+                    recognition.onresult = (event) => {
+                        const transcript = event.results[0][0].transcript;
+                        voiceStatus.innerHTML = '<i class="fas fa-check-circle"></i> Got it';
+                        userInput.value = transcript;
+                        isListening = false;
+                        micBtn.classList.remove('listening');
+
+                        // If we're asking for name, check if this is a name
+                        if (nameAsked && !userName) {
+                            const nameInput = document.getElementById('nameInput');
+                            if (nameInput) {
+                                let spokenName = transcript.toLowerCase();
+                                if (spokenName.includes('my name is')) {
+                                    spokenName = transcript.replace(/my name is/i, '').trim();
+                                } else if (spokenName.includes('name is')) {
+                                    spokenName = transcript.replace(/name is/i, '').trim();
+                                } else if (spokenName.includes('i am')) {
+                                    spokenName = transcript.replace(/i am/i, '').trim();
+                                } else {
+                                    spokenName = transcript.trim();
+                                }
+                                nameInput.value = spokenName;
+                                setName(spokenName);
+                                return;
+                            }
+                        }
+
+                        setTimeout(() => handleUserMessage(), 300);
+                    };
+
+                    recognition.onerror = () => {
+                        voiceStatus.innerHTML = '<i class="fas fa-microphone"></i> Ready';
+                        isListening = false;
+                        micBtn.classList.remove('listening');
+                    };
+
+                    recognition.onend = () => {
+                        if (isListening) {
+                            voiceStatus.innerHTML = '<i class="fas fa-microphone"></i> Ready';
+                            isListening = false;
+                            micBtn.classList.remove('listening');
+                        }
+                    };
+                } catch (e) {
+                    voiceStatus.innerHTML = '<i class="fas fa-microphone"></i> Ready';
+                    isListening = false;
+                    micBtn.classList.remove('listening');
+                }
+            }
+
+            // ---------- TEXT TO SPEECH ----------
+            function speakText(text) {
+                if (!synth) return;
+
+                synth.cancel();
+
+                let cleanText = text.replace(/[✓✅📦🚀⚡🔊🎤]/g, '')
+                    .replace(/\s+/g, ' ')
+                    .trim();
+
+                if (cleanText.length > 200) {
+                    cleanText = cleanText.substring(0, 200) + '...';
+                }
+
+                const utterance = new SpeechSynthesisUtterance(cleanText);
+                utterance.rate = 0.95;
+                utterance.pitch = 1.0;
+
+                const voices = synth.getVoices();
+                const filVoice = voices.find(v => v.lang.includes('fil') || v.lang.includes('tl') || v.lang.includes('ph'));
+                if (filVoice) utterance.voice = filVoice;
+
+                utterance.onstart = () => {
+                    voiceStatus.innerHTML = '<i class="fas fa-volume-up"></i> Speaking...';
+                };
+
+                utterance.onend = () => {
+                    voiceStatus.innerHTML = '<i class="fas fa-microphone"></i> Ready';
+                };
+
+                synth.speak(utterance);
+            }
+
+            // ---------- API CALL ----------
+            async function callDeepSeekAPI(userMessage) {
+                // Add user name context
+                let contextualMessage = userMessage;
+                if (userName && userName !== 'there') {
+                    contextualMessage = `[My name is ${userName}] ${userMessage}`;
+                }
+
+                conversationHistory.push({ role: 'user', content: contextualMessage });
+
+                if (conversationHistory.length > 11) {
+                    conversationHistory = [
+                        conversationHistory[0],
+                        ...conversationHistory.slice(-10)
+                    ];
+                }
+
+                try {
+                    const response = await fetch(API_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Authorization': `Bearer ${OPENROUTER_API_KEY}`,
+                            'HTTP-Referer': 'https://avdtech.ph',
+                            'X-Title': 'AVDTech AI Consultant'
+                        },
+                        body: JSON.stringify({
+                            model: MODEL_NAME,
+                            messages: conversationHistory,
+                            temperature: 0.2,
+                            max_tokens: 1000,
+                            top_p: 0.9
+                        })
+                    });
+
+                    if (!response.ok) throw new Error(`API error: ${response.status}`);
+
+                    const data = await response.json();
+
+                    if (data.error) throw new Error(data.error.message || 'Unknown API error');
+                    if (!data.choices || data.choices.length === 0) throw new Error('No response from AI');
+
+                    const assistantMessage = data.choices[0].message.content;
+
+                    conversationHistory.push({ role: 'assistant', content: assistantMessage });
+                    return assistantMessage;
+
+                } catch (error) {
+                    console.error('API Error:', error);
+                    throw error;
+                }
+            }
+
+            // ---------- HANDLE USER MESSAGE ----------
+            async function handleUserMessage() {
+                const text = userInput.value.trim();
+                if (text === '') return;
+
+                userInput.disabled = true;
+                sendBtn.disabled = true;
+                micBtn.disabled = true;
+
+                addMessage('user', escapeHTML(text));
+                userInput.value = '';
+
+                showTyping();
+
+                try {
+                    const aiResponse = await callDeepSeekAPI(text);
+                    removeTyping();
+
+                    let finalResponse = aiResponse.replace(/\*\*/g, '');
+                    const lowerText = text.toLowerCase();
+                    const contactTriggerWords = ['admin', 'buy', 'order', 'purchase', 'avail', 'package', 'bumili', 'makausap', 'contact', 'magkano', 'how much'];
+
+                    if (contactTriggerWords.some(word => lowerText.includes(word))) {
+                        if (!finalResponse.includes('facebook.com/eliveextreme') && !finalResponse.includes('m.me/')) {
+                            finalResponse += '\n\nPara maka-order o makausap ang aming admin:\n👉 https://www.facebook.com/eliveextreme\n👉 https://m.me/151078995084334';
+                        }
+                    }
+
+                    addMessage('bot', finalResponse);
+                } catch (error) {
+                    removeTyping();
+
+                    // Clean fallback response - AVDTech focused
+                    const fallbackHtml = `Sorry about that, ${userName || 'there'}. I'm having a bit of trouble connecting to my brain right now. 
+
+But just to recap, AVDTech offers Power Efficiency Enhancers:
+• 25UF (₱5,498)
+• 50UF (₱8,288)
+• 100UF (₱19,488)
+
+Para maka-order o makausap ang aming admin:
+Official Page: https://www.facebook.com/eliveextreme
+Direct Message: https://m.me/151078995084334
+
+Please try again in a moment!`;
+                    addMessage('bot', fallbackHtml);
+                } finally {
+                    userInput.disabled = false;
+                    sendBtn.disabled = false;
+                    micBtn.disabled = false;
+                    userInput.focus();
+                }
+            }
+
+            // ---------- ESCAPE HTML ----------
+            function escapeHTML(text) {
+                return text.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+            }
+
+            // ---------- EVENT LISTENERS ----------
+            sendBtn.addEventListener('click', handleUserMessage);
+
+            userInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    e.preventDefault();
+                    handleUserMessage();
+                }
+            });
+
+            micBtn.addEventListener('click', startListening);
+
+            autoSpeakCheckbox.addEventListener('change', (e) => {
+                autoSpeak = e.target.checked;
+            });
+
+            // ---------- INITIALIZE ----------
+            function init() {
+                conversationHistory = [{
+                    role: 'system',
+                    content: SYSTEM_PROMPT.replace('{{userName}}', 'there')
+                }];
+
+                askForName();
+
+                if (synth) {
+                    synth.getVoices();
+                }
+
+                if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                    userInput.style.fontSize = '16px';
+                }
+            }
+
+            init();
+        })();
+    </script>
+
+</body>
+
+</html>
