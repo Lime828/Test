@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVDTech N+ | AI Content Engine</title>
+    <meta name="description" content="Generate high-converting marketing content for AVDTech N+ using AI.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Ensure hidden class works */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Fix for dropdown positioning */
+        .dropdown-menu {
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        /* Loading animation */
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loader-icon {
+            animation: spin 2s linear infinite;
+        }
+
+        /* Platform badge styles */
+        .platform-badge {
+            display: inline-block;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 8px;
+            font-weight: 700;
+            margin-left: 4px;
+            text-transform: uppercase;
+            background: var(--glass);
+            color: var(--text-slate-400);
+        }
+
+        .platform-badge.tiktok {
+            background: #00f2ea20;
+            color: #00f2ea;
+        }
+
+        .platform-badge.facebook-reels {
+            background: #1877f220;
+            color: #1877f2;
+        }
+
+        .platform-badge.youtube-shorts {
+            background: #ff000020;
+            color: #ff0000;
+        }
+
+        .platform-badge.instagram-reels {
+            background: #e4405f20;
+            color: #e4405f;
+        }
+
+        .platform-badge.pinterest-videos {
+            background: #bd081c20;
+            color: #bd081c;
+        }
+
+        .emotion-tag {
+            font-size: 8px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: var(--orange-500);
+            color: white;
+            margin-left: 4px;
+        }
+
+        /* API Status Bar */
+        .api-status {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 2rem;
+            font-size: 11px;
+            color: var(--text-slate-400);
+            margin-bottom: 1rem;
+            border: 1px solid var(--glass-border);
+        }
+
+        .api-status-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--green-500);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--green-500);
+        }
+
+        .api-status-key {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.2rem 0.5rem;
+            border-radius: 0.5rem;
+            color: var(--orange-400);
+        }
+
+        .api-status-logout {
+            margin-left: auto;
+            background: rgba(239, 68, 68, 0.1);
+            border: 1px solid rgba(239, 68, 68, 0.2);
+            color: #ef4444;
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 9px;
+            text-transform: uppercase;
+        }
+
+        .api-status-logout:hover {
+            background: rgba(239, 68, 68, 0.2);
+        }
+
+        /* No auth overlay styles needed anymore */
+    </style>
+</head>
+
+<body class="selection-orange">
+    <div class="app-container">
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <div class="logo-container" style="margin-bottom: 0;">
+                <div class="logo-icon" style="padding: 0.35rem; border-radius: 0.5rem;">
+                    <i data-lucide="zap" size="16" color="white"></i>
+                </div>
+                <h1 class="logo-text" style="font-size: 1rem;">AVDTech <span class="logo-n-plus">N+</span></h1>
+            </div>
+            <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                <i data-lucide="menu" size="24"></i>
+            </button>
+        </header>
+
+        <!-- Sidebar Backdrop -->
+        <div id="sidebar-backdrop" class="sidebar-backdrop"></div>
+
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-mobile-header">
+                <h2 style="font-size: 1rem; font-weight: 800;">MENU</h2>
+                <button id="close-sidebar" class="close-sidebar-btn">
+                    <i data-lucide="x" size="20"></i>
+                </button>
+            </div>
+            <div class="sidebar-header">
+                <div class="logo-container">
+                    <div class="logo-icon">
+                        <i data-lucide="zap" size="20" color="white"></i>
+                    </div>
+                    <h1 class="logo-text">AVDTech <span class="logo-n-plus">N+</span></h1>
+                </div>
+
+                <!-- API Status Bar -->
+                <div id="api-status-bar" class="api-status">
+                    <span class="api-status-dot"></span>
+                    <span>API: Connected</span>
+                    <span id="api-key-preview" class="api-status-key"></span>
+                    <span id="logout-btn" class="api-status-logout">Logout</span>
+                </div>
+
+                <div class="search-container">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" id="search-input" class="search-input" placeholder="Search 1,000 Titles...">
+                </div>
+
+                <div class="dropdown-container" id="dropdown-parent">
+                    <button id="filter-btn" class="filter-button">
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <i data-lucide="filter" id="filter-icon" size="14" style="color: var(--orange-500);"></i>
+                            <span id="selected-category-text">ALL TITLES</span>
+                        </div>
+                        <i data-lucide="chevron-down" id="chevron-icon" size="16"
+                            style="color: var(--text-slate-500); transition: transform 0.3s;"></i>
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-menu custom-scrollbar">
+                        <!-- Categories will be injected here by script.js -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="hook-list" class="hook-list custom-scrollbar">
+                <!-- Hooks will be injected here (shuffled on every load) -->
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content custom-scrollbar">
+            <div class="bg-glow-orange"></div>
+            <div class="bg-glow-green"></div>
+
+            <!-- Initial State -->
+            <div id="empty-state" class="empty-state">
+                <div class="empty-card">
+                    <div class="empty-icon-wrap">
+                        <i data-lucide="cpu" size="48" style="color: var(--orange-500);"></i>
+                    </div>
+                    <h2 class="empty-title">N+ Image Content</h2>
+                    <p class="empty-desc">
+                        Transform any hook from our <span style="color: var(--orange-500); font-weight: 700;">1,000
+                            Title Master List</span> into a high-converting marketing campaign for <span
+                            style="color: var(--green-500); font-weight: 700;">AVDTech N+</span>.
+                    </p>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <i data-lucide="layout" class="feature-icon" style="color: var(--orange-400);"></i>
+                            <span class="feature-label">Readability</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="image" class="feature-icon" style="color: var(--green-400);"></i>
+                            <span class="feature-label">Visuals</span>
+                        </div>
+                        <div class="feature-item">
+                            <i data-lucide="film" class="feature-icon" style="color: var(--purple-400);"></i>
+                            <span class="feature-label">Motion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loader -->
+            <div id="loader" class="loader-wrap">
+                <div style="position: relative; margin-bottom: 2rem;">
+                    <i data-lucide="refresh-cw" class="loader-icon"></i>
+                    <i data-lucide="sparkles" size="24"
+                        style="position: absolute; top: -0.5rem; right: -0.5rem; color: var(--green-500);"></i>
+                </div>
+                <h3 style="font-size: 1.5rem; font-weight: 900;">Crafting Excellence...</h3>
+                <p style="color: var(--text-slate-500); font-weight: 500;">Generating high-readability assets</p>
+            </div>
+
+            <!-- Results -->
+            <div id="results" class="results-container">
+                <!-- Header -->
+                <div class="result-header">
+                    <span class="active-hook-tag">Active Hook</span>
+                    <h2 id="result-hook-text" class="selected-hook-display"></h2>
+                    <div class="selected-hook-cat">
+                        <div class="cat-divider"></div>
+                        <span id="result-hook-cat"></span>
+                        <span id="result-hook-emotion" class="emotion-tag"></span>
+                    </div>
+                </div>
+
+                <!-- Post Card -->
+                <div class="card">
+                    <div class="card-tag">AESTHETIC SOCIAL POST</div>
+                    <div class="card-header">
+                        <div class="card-title-wrap">
+                            <div class="card-icon">
+                                <i data-lucide="layout"></i>
+                            </div>
+                            <div>
+                                <h3 class="card-title">Structured Content</h3>
+                                <p class="card-subtitle">Optimized for Engagement</p>
+                            </div>
+                        </div>
+                        <button id="copy-post-btn" class="copy-button">
+                            <i data-lucide="copy" size="16"></i>
+                            <span>Copy Post</span>
+                        </button>
+                    </div>
+                    <div id="post-content" class="content-box"></div>
+                </div>
+
+                <div class="bottom-grid">
+                    <!-- Image Card -->
+                    <div class="card sub-card">
+                        <div class="card-header" style="border: none; margin-bottom: 1rem; padding-bottom: 0;">
+                            <div class="card-title-wrap">
+                                <div class="card-icon"
+                                    style="background: rgba(249, 115, 22, 0.1); color: var(--orange-500); border-color: rgba(249, 115, 22, 0.2);">
+                                    <i data-lucide="image"></i>
+                                </div>
+                                <h3 class="card-title"
+                                    style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em;">Visual
+                                    Prompt</h3>
+                            </div>
+                            <button id="copy-image-btn" class="copy-button" style="padding: 0.5rem;">
+                                <i data-lucide="copy" size="16"></i>
+                            </button>
+                        </div>
+                        <div id="image-prompt" class="prompt-box"></div>
+                        <button id="create-image-btn" class="create-button">
+                            <i data-lucide="sparkles" size="20"></i>
+                            CREATE IMAGE
+                            <i data-lucide="external-link" size="16" style="opacity: 0.5;"></i>
+                        </button>
+                        <p class="button-hint">👇 Comment below, Message our Facebook Page or click here</p>
+                    </div>
+
+                    <!-- Motion Card -->
+                    <div class="card sub-card">
+                        <div class="card-header" style="border: none; margin-bottom: 1rem; padding-bottom: 0;">
+                            <div class="card-title-wrap">
+                                <div class="card-icon"
+                                    style="background: rgba(168, 85, 247, 0.1); color: var(--purple-500); border-color: rgba(168, 85, 247, 0.2);">
+                                    <i data-lucide="film"></i>
+                                </div>
+                                <h3 class="card-title"
+                                    style="font-size: 14px; text-transform: uppercase; letter-spacing: 0.1em;">Motion
+                                    Concept</h3>
+                            </div>
+                            <button id="copy-motion-btn" class="copy-button" style="padding: 0.5rem;">
+                                <i data-lucide="copy" size="16"></i>
+                            </button>
+                        </div>
+                        <div id="motion-prompt" class="prompt-box"></div>
+                        <div
+                            style="display: flex; gap: 0.75rem; background: rgba(0, 0, 0, 0.2); padding: 1rem; border-radius: 1rem; border: 1px solid var(--glass-border); margin-top: 1rem;">
+                            <i data-lucide="info" size="16" style="color: var(--purple-500); flex-shrink: 0;"></i>
+                            <p style="font-size: 10px; color: var(--text-slate-500); line-height: 1.4;">Paste this into
+                                AI video tools like Luma Dream Machine or Kling for cinematic results.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="hooks_data.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons when page loads
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+    </script>
+</body>
+
+</html>

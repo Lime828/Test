@@ -1,0 +1,1024 @@
+{
+  "metadata": {
+    "total_hooks": 100,
+    "part": 1,
+    "total_parts": 10,
+    "brand": "AVDTech International + N+ System",
+    "categories": [
+      "Product_Energy_Efficiency",
+      "Distributor_Opportunity",
+      "N+_System_Automation",
+      "Objections_Trust",
+      "Comparison",
+      "Testimonials_Stories",
+      "Urgency_Seasonal",
+      "Educational",
+      "Emotional",
+      "Call_To_Action"
+    ],
+    "languages": ["English", "Taglish", "Filipino"],
+    "platforms": ["TikTok", "Facebook Reels", "YouTube Shorts", "Instagram Reels", "Pinterest Videos"]
+  },
+  "video_hooks": [
+    {
+      "id": 1,
+      "hook": "Namumulaga na naman ang kuryente mo? Eto ang solusyon.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Frustration",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Problem Agitation"
+    },
+    {
+      "id": 2,
+      "hook": "Gusto mo bang protektahan ang ref at TV mo sa biglaang pagtaas ng boltahe?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Concern",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Protection"
+    },
+    {
+      "id": 3,
+      "hook": "May kilala ka bang nagrereklamo sa taas ng kuryente pero walang ginagawa?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Relatability",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Social Proof"
+    },
+    {
+      "id": 4,
+      "hook": "Ano kung sabihin ko na pwedeng hindi 'saving' ang kailangan mo—kundi efficiency?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Curiosity",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Paradigm Shift"
+    },
+    {
+      "id": 5,
+      "hook": "Bakit nasisira agad ang inverter nyo? Eto ang dahilan.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Frustration",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Problem Solving"
+    },
+    {
+      "id": 6,
+      "hook": "3 signs na mahina ang power factor ng bahay nyo.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Curiosity",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 7,
+      "hook": "Paano mo mababawasan ang init ng kable ng kuryente mo?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Concern",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Practical Tip"
+    },
+    {
+      "id": 8,
+      "hook": "Stop blaming Meralco. Start checking your power quality.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Empowerment",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Accountability"
+    },
+    {
+      "id": 9,
+      "hook": "Gusto mo bang tumagal appliances mo ng 5 taon?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Desire",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Benefit"
+    },
+    {
+      "id": 10,
+      "hook": "Pano kung may solusyon na gawa dito sa Pilipinas?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "National Pride",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Patriotism"
+    },
+    {
+      "id": 11,
+      "hook": "May Japanese tech pala tayo na pwedeng gamitin sa bahay.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Surprise",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Discovery"
+    },
+    {
+      "id": 12,
+      "hook": "Bawas init, bawas sayang, bawas gastos.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Relief",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Summary Benefit"
+    },
+    {
+      "id": 13,
+      "hook": "Ano ang power factor at bakit ito mahalaga sa bill mo?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Curiosity",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 14,
+      "hook": "Yung appliance mo, naghihirap na. Eto ang magpapagaan.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Empathy",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Relatability"
+    },
+    {
+      "id": 15,
+      "hook": "Hindi ka na dapat natutulog na may kuryenteng nasasayang.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Urgency",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Waste Awareness"
+    },
+    {
+      "id": 16,
+      "hook": "Your electric bill is not just about consumption—it's about quality.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Enlightenment",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Perspective Shift"
+    },
+    {
+      "id": 17,
+      "hook": "What if your appliances are suffering and you don't even know it?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Concern",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Hidden Problem"
+    },
+    {
+      "id": 18,
+      "hook": "The real reason your aircon isn't as malamig as before.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Frustration",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Problem Solving"
+    },
+    {
+      "id": 19,
+      "hook": "Did you know poor power quality can shorten appliance life by 50%?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Shock",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Statistic"
+    },
+    {
+      "id": 20,
+      "hook": "Yung motor nyo sa well, ang lakas kumuryente? Eto ang dahilan.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Frustration",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Specific Problem"
+    },
+    {
+      "id": 21,
+      "hook": "3 appliances na lihim na sumisira sa power quality mo.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Curiosity",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Listicle"
+    },
+    {
+      "id": 22,
+      "hook": "Pano kung ang kailangan mo lang pala ay power correction, hindi bagong appliance?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Realization",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Cost Saving"
+    },
+    {
+      "id": 23,
+      "hook": "Why your refrigerator is running but not cooling properly.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Frustration",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Troubleshooting"
+    },
+    {
+      "id": 24,
+      "hook": "Eto ang totoo: Hindi lahat ng 'energy saver' ay effective.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Skepticism",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Myth Busting"
+    },
+    {
+      "id": 25,
+      "hook": "Yung mga brownout sa inyo, may kinalaman sa power factor?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Curiosity",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Connection"
+    },
+    {
+      "id": 26,
+      "hook": "Paano mo malalaman kung maganda power quality ng bahay mo?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Curiosity",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Self-Assessment"
+    },
+    {
+      "id": 27,
+      "hook": "5 signs your home needs power factor correction.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Awareness",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Checklist"
+    },
+    {
+      "id": 28,
+      "hook": "Stop replacing your TV every 2 years. Fix your power first.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Frustration",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Long-Term Solution"
+    },
+    {
+      "id": 29,
+      "hook": "Yung kuryente nyo, parang dugo ng bahay. Dapat malinis.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Metaphor",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Analogy"
+    },
+    {
+      "id": 30,
+      "hook": "What if I told you your meter is spinning faster than it should?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Suspicion",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Curiosity"
+    },
+    {
+      "id": 31,
+      "hook": "May 7 ways ka palang pagkakitaan sa isang business lang.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Surprise",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Opportunity"
+    },
+    {
+      "id": 32,
+      "hook": "Ano kung kikita ka kahit tulog ka?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Desire",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Passive Income"
+    },
+    {
+      "id": 33,
+      "hook": "Yung referral mo, kumikita—kumikita ka din.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Interest",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Leverage"
+    },
+    {
+      "id": 34,
+      "hook": "Ayaw mo ng networking na puro benta lang? Eto para sayo.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Relief",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Differentiation"
+    },
+    {
+      "id": 35,
+      "hook": "Pano kung may kita kang monthly kahit walang bagong benta?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Curiosity",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Residual Income"
+    },
+    {
+      "id": 36,
+      "hook": "Yung ₱5,498 mong puhunan, pwedeng pagkakitaan ng paulit-ulit.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Interest",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "ROI"
+    },
+    {
+      "id": 37,
+      "hook": "Ayaw mo ng walang limit? Eto may cap—at maganda yun.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Confusion then Clarity",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Sustainability"
+    },
+    {
+      "id": 38,
+      "hook": "Bakit may ceiling ang kita? Para hindi sumabog ang sistema.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Understanding",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Education"
+    },
+    {
+      "id": 39,
+      "hook": "Yung downline mo, kumikita—may parte ka dun.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Excitement",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Leadership"
+    },
+    {
+      "id": 40,
+      "hook": "Ano ang One Leg Bonus at bakit yun ang gusto ng matatalino?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Curiosity",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Unique Feature"
+    },
+    {
+      "id": 41,
+      "hook": "Yung 5th pair mo, napupunta sa global pool. Eto ang ibig sabihin nun.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Interest",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Profit Sharing"
+    },
+    {
+      "id": 42,
+      "hook": "Pano kung may kita kang 2% hanggang 10 levels?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Amazement",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Depth"
+    },
+    {
+      "id": 43,
+      "hook": "Gusto mo ng negosyong hindi mo kailangan i-explain nang paulit-ulit?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Relief",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Simplicity"
+    },
+    {
+      "id": 44,
+      "hook": "Ayaw mo ng networking na puro pangako? Eto may produkto.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Skepticism Addressed",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Credibility"
+    },
+    {
+      "id": 45,
+      "hook": "Yung binibenta mo, hindi imaginary—may batas pang sumasalo.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Trust",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Legitimacy"
+    },
+    {
+      "id": 46,
+      "hook": "What if you could earn from both selling and building a team?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Interest",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Dual Income"
+    },
+    {
+      "id": 47,
+      "hook": "The problem with most MLMs? They forget the product. We don't.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Frustration Addressed",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Differentiation"
+    },
+    {
+      "id": 48,
+      "hook": "3 reasons why our compensation plan is built for long-term earners.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Curiosity",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Listicle"
+    },
+    {
+      "id": 49,
+      "hook": "Yung ₱33,264 mo, pwedeng maging ₱7.5M in a year? Let's do the math.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Shock",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Math/Proof"
+    },
+    {
+      "id": 50,
+      "hook": "Paano kumita ng ₱2.1M in a month? Eto ang sikreto ng One Leg Bonus.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Amazement",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "High Ticket"
+    },
+    {
+      "id": 51,
+      "hook": "You don't need to be good at sales. You just need to be good at sharing.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Encouragement",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Accessibility"
+    },
+    {
+      "id": 52,
+      "hook": "Yung mga sinasabi nilang 'networking lang yan'—hindi nila alam, may batas na sumusupporta sa amin.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Pride",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Legitimacy"
+    },
+    {
+      "id": 53,
+      "hook": "Ano kung yung ₱300/mo mo, nagiging ₱30,000/mo?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Desire",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Leverage"
+    },
+    {
+      "id": 54,
+      "hook": "The difference between a job and a business? Leverage. We give you both.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Empowerment",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Freedom"
+    },
+    {
+      "id": 55,
+      "hook": "Gusto mo ng negosyong may ROI in 1 sale? Eto na yun.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Practicality",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Quick Return"
+    },
+    {
+      "id": 56,
+      "hook": "Why top earners are moving to energy efficiency—not fashion or food.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Curiosity",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Trend"
+    },
+    {
+      "id": 57,
+      "hook": "Yung ₱1,210 mong kita sa isang benta, pwede nang pambaon ng isang linggo.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Relatability",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Everyday Value"
+    },
+    {
+      "id": 58,
+      "hook": "Pano kung yung negosyo mo, kaya mong ipasa sa anak mo?",
+      "category": "Distributor_Opportunity",
+      "emotion": "Legacy",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Generational Wealth"
+    },
+    {
+      "id": 59,
+      "hook": "Ayaw mo ng monthly quota? Eto, walang quota—may systema.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Relief",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Freedom"
+    },
+    {
+      "id": 60,
+      "hook": "3 types of people na kayang kumita dito—kahit sino ka pa.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Inclusivity",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Diversity"
+    },
+    {
+      "id": 61,
+      "hook": "Ano kung may AI kang kausap na nagbebenta para sayo habang tulog ka?",
+      "category": "N+_System_Automation",
+      "emotion": "Amazement",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Future"
+    },
+    {
+      "id": 62,
+      "hook": "Pagod ka na bang mag-follow up sa mga prospect mo?",
+      "category": "N+_System_Automation",
+      "emotion": "Frustration",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Pain Point"
+    },
+    {
+      "id": 63,
+      "hook": "Yung FB page mo, pwede palang kumita kahit walang nagpopost.",
+      "category": "N+_System_Automation",
+      "emotion": "Surprise",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Automation"
+    },
+    {
+      "id": 64,
+      "hook": "Gusto mo ng content, pero wala kang oras? Eto ang sagot.",
+      "category": "N+_System_Automation",
+      "emotion": "Relief",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Time Saver"
+    },
+    {
+      "id": 65,
+      "hook": "Hindi mo na kelangan maging magaling magsulat—gagawin na ng AI.",
+      "category": "N+_System_Automation",
+      "emotion": "Empowerment",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "AI Power"
+    },
+    {
+      "id": 66,
+      "hook": "Yung bagong prospect mo, auto-reply, auto-redirect, auto-explain.",
+      "category": "N+_System_Automation",
+      "emotion": "Efficiency",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Workflow"
+    },
+    {
+      "id": 67,
+      "hook": "Yung landing page mo, may AI agent na sumasagot 24/7.",
+      "category": "N+_System_Automation",
+      "emotion": "Reliability",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Always On"
+    },
+    {
+      "id": 68,
+      "hook": "Pano kung may sistema ka na—at ang kelangan mo lang gawin, i-share?",
+      "category": "N+_System_Automation",
+      "emotion": "Simplicity",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Done-For-You"
+    },
+    {
+      "id": 69,
+      "hook": "Hindi mo na kelangan mag-encode ng customer—admin na gagawa.",
+      "category": "N+_System_Automation",
+      "emotion": "Relief",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Support"
+    },
+    {
+      "id": 70,
+      "hook": "Yung pasahan mo ng training, isang link na lang.",
+      "category": "N+_System_Automation",
+      "emotion": "Organization",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Centralization"
+    },
+    {
+      "id": 71,
+      "hook": "Yung mga tanong ng prospect mo, nasagot na bago ka pa magising.",
+      "category": "N+_System_Automation",
+      "emotion": "Efficiency",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Time Shift"
+    },
+    {
+      "id": 72,
+      "hook": "Gusto mo ng negosyong may kasamang tech support?",
+      "category": "N+_System_Automation",
+      "emotion": "Security",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Support"
+    },
+    {
+      "id": 73,
+      "hook": "Ayaw mo ng manual? Eto, automated halos lahat.",
+      "category": "N+_System_Automation",
+      "emotion": "Relief",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Automation"
+    },
+    {
+      "id": 74,
+      "hook": "Yung ads mo, may kasunod na sistema—hindi lang post.",
+      "category": "N+_System_Automation",
+      "emotion": "Strategy",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Funnel"
+    },
+    {
+      "id": 75,
+      "hook": "Pano kung ang ₱300/mo mo, nagiging leverage mo sa panahon?",
+      "category": "N+_System_Automation",
+      "emotion": "Value",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Cost-Benefit"
+    },
+    {
+      "id": 76,
+      "hook": "Yung ginagawa ng iba in 1 week, kaya mo in 1 day gamit to.",
+      "category": "N+_System_Automation",
+      "emotion": "Speed",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Efficiency"
+    },
+    {
+      "id": 77,
+      "hook": "Ayaw mo ng complicated? Eto, plug and play na.",
+      "category": "N+_System_Automation",
+      "emotion": "Simplicity",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Easy Setup"
+    },
+    {
+      "id": 78,
+      "hook": "Yung bagong member mo, may sarili nang sistema agad.",
+      "category": "N+_System_Automation",
+      "emotion": "Duplication",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Scalability"
+    },
+    {
+      "id": 79,
+      "hook": "Pano kung yung negosyo mo, kayang kopyahin—at yun ang gusto natin?",
+      "category": "N+_System_Automation",
+      "emotion": "Duplication",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "System Thinking"
+    },
+    {
+      "id": 80,
+      "hook": "Yung sistema mo, nagbebenta kahit wala ka sa harap ng phone.",
+      "category": "N+_System_Automation",
+      "emotion": "Freedom",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Passive System"
+    },
+    {
+      "id": 81,
+      "hook": "What if your business could run on autopilot while you sleep?",
+      "category": "N+_System_Automation",
+      "emotion": "Desire",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Dream"
+    },
+    {
+      "id": 82,
+      "hook": "3 things AI can do for your network marketing business today.",
+      "category": "N+_System_Automation",
+      "emotion": "Curiosity",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Listicle"
+    },
+    {
+      "id": 83,
+      "hook": "You don't need to be a content creator. You just need this system.",
+      "category": "N+_System_Automation",
+      "emotion": "Relief",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Ease"
+    },
+    {
+      "id": 84,
+      "hook": "The future of networking is AI + Human. We built it already.",
+      "category": "N+_System_Automation",
+      "emotion": "Forward-Thinking",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Innovation"
+    },
+    {
+      "id": 85,
+      "hook": "Yung mga tanong ng prospect, sinasagot na ng AI—ikaw, nanonood lang ng Netflix.",
+      "category": "N+_System_Automation",
+      "emotion": "Humor",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Relatable"
+    },
+    {
+      "id": 86,
+      "hook": "Pano kung yung sales page mo, ikaw na ang bahala—24/7?",
+      "category": "N+_System_Automation",
+      "emotion": "Wonder",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Always Selling"
+    },
+    {
+      "id": 87,
+      "hook": "Gumastos ka na sa ads, pero walang benta? Eto kulang.",
+      "category": "N+_System_Automation",
+      "emotion": "Frustration",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Missing Piece"
+    },
+    {
+      "id": 88,
+      "hook": "Yung AI namin, hindi chatbot lang—may benta talaga.",
+      "category": "N+_System_Automation",
+      "emotion": "Interest",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Results"
+    },
+    {
+      "id": 89,
+      "hook": "Automation without the human touch? Deadma. Kaya nga hybrid.",
+      "category": "N+_System_Automation",
+      "emotion": "Balance",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Hybrid Model"
+    },
+    {
+      "id": 90,
+      "hook": "Yung system mo, may admin na sumusupport—hindi ka nag-iisa.",
+      "category": "N+_System_Automation",
+      "emotion": "Support",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Community"
+    },
+    {
+      "id": 91,
+      "hook": "Mahal ba? ₱1,500 one-time, ₱300/month. Mas mahal pa ba sa kape mo yun?",
+      "category": "Objections_Trust",
+      "emotion": "Practicality",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Cost Objection"
+    },
+    {
+      "id": 92,
+      "hook": "Scam ba? May SEC registration, may batas, may produkto.",
+      "category": "Objections_Trust",
+      "emotion": "Skepticism Addressed",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Legitimacy"
+    },
+    {
+      "id": 93,
+      "hook": "Gumagana ba talaga? 3 years na kami, 82 provinces, libo-libong users.",
+      "category": "Objections_Trust",
+      "emotion": "Proof",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Social Proof"
+    },
+    {
+      "id": 94,
+      "hook": "Bakit hindi 'energy saver' ang tawag namin? Dahil ayaw naming magsinungaling.",
+      "category": "Objections_Trust",
+      "emotion": "Honesty",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Integrity"
+    },
+    {
+      "id": 95,
+      "hook": "May warranty ba? Oo. May support? Oo. May totoong tao? Oo.",
+      "category": "Objections_Trust",
+      "emotion": "Reassurance",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Assurance"
+    },
+    {
+      "id": 96,
+      "hook": "Yung iba, puro pangako. Kami, pruweba.",
+      "category": "Objections_Trust",
+      "emotion": "Differentiation",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Comparison"
+    },
+    {
+      "id": 97,
+      "hook": "Bakit kami naniniwala sa 'power efficiency' hindi sa 'power saving'? Panoorin mo.",
+      "category": "Objections_Trust",
+      "emotion": "Curiosity",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Education"
+    },
+    {
+      "id": 98,
+      "hook": "Yung ₱5,498 mo, may kasamang peace of mind. Sulit ba?",
+      "category": "Objections_Trust",
+      "emotion": "Value",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Emotional Value"
+    },
+    {
+      "id": 99,
+      "hook": "Hindi kami nagpapanggap. Eto ang produkto, eto ang presyo, eto ang aasahan mo.",
+      "category": "Objections_Trust",
+      "emotion": "Transparency",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Honesty"
+    },
+    {
+      "id": 100,
+      "hook": "Ano sabi ng DTI? Ano sabi ng batas? Nandito lahat.",
+      "category": "Objections_Trust",
+      "emotion": "Authority",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Compliance"
+    }
+  ]
+}

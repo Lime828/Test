@@ -1,0 +1,1024 @@
+{
+  "metadata": {
+    "total_hooks": 100,
+    "part": 6,
+    "total_parts": 10,
+    "brand": "AVDTech International + N+ System",
+    "categories": [
+      "Product_Energy_Efficiency",
+      "Distributor_Opportunity",
+      "N+_System_Automation",
+      "Objections_Trust",
+      "Comparison",
+      "Testimonials_Stories",
+      "Urgency_Seasonal",
+      "Educational",
+      "Emotional",
+      "Call_To_Action"
+    ],
+    "languages": ["English", "Taglish", "Filipino"],
+    "platforms": ["TikTok", "Facebook Reels", "YouTube Shorts", "Instagram Reels", "Pinterest Videos"]
+  },
+  "video_hooks": [
+    {
+      "id": 501,
+      "hook": "Yung iba, 'change life' daw. Kami, change bill lang muna. Sapat na.",
+      "category": "Comparison",
+      "emotion": "Humble",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Grounding"
+    },
+    {
+      "id": 502,
+      "hook": "Yung iba, puro 'join now'. Kami, puro 'learn first'.",
+      "category": "Comparison",
+      "emotion": "Education",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Value"
+    },
+    {
+      "id": 503,
+      "hook": "Yung iba, mahirap i-explain. Kami, may AI na nag-e-explain.",
+      "category": "Comparison",
+      "emotion": "Ease",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Tech"
+    },
+    {
+      "id": 504,
+      "hook": "Yung iba, kelangan mo ng magandang boses. Kami, kelangan mo lang ng link.",
+      "category": "Comparison",
+      "emotion": "Accessibility",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Simplicity"
+    },
+    {
+      "id": 505,
+      "hook": "Yung iba, puro events. Kami, puro sistema na pwede mong gamitin kahit nasa bahay ka.",
+      "category": "Comparison",
+      "emotion": "Convenience",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Stay Home"
+    },
+    {
+      "id": 506,
+      "hook": "Yung iba, umaasa sa charisma. Kami, umaasa sa AI at admin support.",
+      "category": "Comparison",
+      "emotion": "Reliability",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Consistency"
+    },
+    {
+      "id": 507,
+      "hook": "Yung iba, pag may nagtanong, ikaw sasagot. Kami, may AI agent na sasagot.",
+      "category": "Comparison",
+      "emotion": "Relief",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Hands-off"
+    },
+    {
+      "id": 508,
+      "hook": "Yung iba, ikaw magfo-follow up. Kami, auto-follow up na.",
+      "category": "Comparison",
+      "emotion": "Efficiency",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Automation"
+    },
+    {
+      "id": 509,
+      "hook": "Yung iba, ikaw mag-e-encode ng member. Kami, admin gagawa.",
+      "category": "Comparison",
+      "emotion": "Support",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Human Touch"
+    },
+    {
+      "id": 510,
+      "hook": "Yung iba, pag sumali sila, bahala ka na. Kami, may training, may community, may systema.",
+      "category": "Comparison",
+      "emotion": "Care",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Support"
+    },
+    {
+      "id": 511,
+      "hook": "Yung kapitbahay naming nag-install, tumawag sa akin: 'Uy, bumaba bill ko.' Saya.",
+      "category": "Testimonials_Stories",
+      "emotion": "Joy",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Happiness"
+    },
+    {
+      "id": 512,
+      "hook": "Yung tita ko sa probinsya, nag-50 UF. Sabi nya: 'Sana pala noon ko pa 'to ginawa.'",
+      "category": "Testimonials_Stories",
+      "emotion": "Regret then Relief",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Timing"
+    },
+    {
+      "id": 513,
+      "hook": "Yung kaibigan kong ayaw sa networking, ngayon leader na. Bakit? Dahil sa produkto.",
+      "category": "Testimonials_Stories",
+      "emotion": "Conversion",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Change"
+    },
+    {
+      "id": 514,
+      "hook": "Yung kliyente kong may car wash, nag-install ng 100 UF. Bawas init, bawas init ng ulo.",
+      "category": "Testimonials_Stories",
+      "emotion": "Business",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Commercial"
+    },
+    {
+      "id": 515,
+      "hook": "Yung nanay ko, 65, kumikita na ng referral bonus. Kung kaya nya, kaya mo.",
+      "category": "Testimonials_Stories",
+      "emotion": "Inspiration",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Age"
+    },
+    {
+      "id": 516,
+      "hook": "Yung estudyanteng walang puhunan, nanghiram sa nanay. After 1 month, nabayaran na.",
+      "category": "Testimonials_Stories",
+      "emotion": "Determination",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Youth"
+    },
+    {
+      "id": 517,
+      "hook": "Yung OFW na pagod na sa abroad, umuwi at nag-full time dito. Ngayon, mas masaya.",
+      "category": "Testimonials_Stories",
+      "emotion": "Homecoming",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "OFW"
+    },
+    {
+      "id": 518,
+      "hook": "Yung nag-duda nung una, ngayon sya na nagre-recruit. Ganyan kalakas ang sistema.",
+      "category": "Testimonials_Stories",
+      "emotion": "Belief",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Conversion"
+    },
+    {
+      "id": 519,
+      "hook": "Yung laging napapagastos sa维修, ngayon wala nang sira-sirang appliance.",
+      "category": "Testimonials_Stories",
+      "emotion": "Savings",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Repair"
+    },
+    {
+      "id": 520,
+      "hook": "Yung walang tiwala sa sarili, ngayon confident na mag-share. Kasi hindi na sya ang nagsasalita—sistema na.",
+      "category": "Testimonials_Stories",
+      "emotion": "Confidence",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Empowerment"
+    },
+    {
+      "id": 521,
+      "hook": "Rainy season is here. Protect your home from power surges.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Safety",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Seasonal"
+    },
+    {
+      "id": 522,
+      "hook": "Christmas bonus idea: Invest in something that pays you back.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Smart Money",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Seasonal"
+    },
+    {
+      "id": 523,
+      "hook": "New Year, new you—and new, lower electric bills.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Fresh Start",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Seasonal"
+    },
+    {
+      "id": 524,
+      "hook": "Summer is coming. Don't let your aircon cost you a fortune.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Warning",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Seasonal"
+    },
+    {
+      "id": 525,
+      "hook": "Ber months: The season of giving—and receiving lower bills.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Holiday",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Seasonal"
+    },
+    {
+      "id": 526,
+      "hook": "Before the next bagyo, secure your home's electrical system.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Preparedness",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Safety"
+    },
+    {
+      "id": 527,
+      "hook": "Fiesta season: More guests, more load. Be ready.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Preparation",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Event"
+    },
+    {
+      "id": 528,
+      "hook": "Back to school: Make sure your dorm has stable power.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Care",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Student"
+    },
+    {
+      "id": 529,
+      "hook": "Undas: A time to remember—and to protect the homes we leave behind.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Memorial",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Family"
+    },
+    {
+      "id": 530,
+      "hook": "Holy Week: Reflect, recharge, and check your power quality.",
+      "category": "Urgency_Seasonal",
+      "emotion": "Spiritual",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Reflection"
+    },
+    {
+      "id": 531,
+      "hook": "Why power factor matters more than you think.",
+      "category": "Educational",
+      "emotion": "Curiosity",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 532,
+      "hook": "How to calculate your ideal power correction size.",
+      "category": "Educational",
+      "emotion": "Practical",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 533,
+      "hook": "The science of capacitors: How they store and release energy.",
+      "category": "Educational",
+      "emotion": "Science",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 534,
+      "hook": "Why inductive loads (motors, compressors) need power correction.",
+      "category": "Educational",
+      "emotion": "Curiosity",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 535,
+      "hook": "The difference between active and reactive power.",
+      "category": "Educational",
+      "emotion": "Clarity",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 536,
+      "hook": "How voltage fluctuations damage your appliances.",
+      "category": "Educational",
+      "emotion": "Awareness",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 537,
+      "hook": "The role of power quality in energy efficiency.",
+      "category": "Educational",
+      "emotion": "Efficiency",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 538,
+      "hook": "How to spot poor power quality in your home.",
+      "category": "Educational",
+      "emotion": "Awareness",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 539,
+      "hook": "The environmental cost of reactive power.",
+      "category": "Educational",
+      "emotion": "Eco",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 540,
+      "hook": "Why the government supports energy efficiency devices.",
+      "category": "Educational",
+      "emotion": "Authority",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Educational"
+    },
+    {
+      "id": 541,
+      "hook": "Para sa mga sawa nang mag-isa sa negosyo.",
+      "category": "Emotional",
+      "emotion": "Loneliness",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Community"
+    },
+    {
+      "id": 542,
+      "hook": "Para sa mga gusto ng kausap—hindi lang chatbot.",
+      "category": "Emotional",
+      "emotion": "Human",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Support"
+    },
+    {
+      "id": 543,
+      "hook": "Para sa mga gusto ng kita—pero ayaw ng kumplikado.",
+      "category": "Emotional",
+      "emotion": "Simplicity",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Easy"
+    },
+    {
+      "id": 544,
+      "hook": "Para sa mga gusto ng negosyong hindi sila ang bida—sistema ang bida.",
+      "category": "Emotional",
+      "emotion": "Humility",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "System"
+    },
+    {
+      "id": 545,
+      "hook": "Para sa mga gusto ng tulog—na may kasamang kita.",
+      "category": "Emotional",
+      "emotion": "Rest",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Passive"
+    },
+    {
+      "id": 546,
+      "hook": "Para sa mga gusto ng peace—hindi lang sa kuryente, pati sa isip.",
+      "category": "Emotional",
+      "emotion": "Peace",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Mind"
+    },
+    {
+      "id": 547,
+      "hook": "Para sa mga gusto ng future—na kayang i-duplicate.",
+      "category": "Emotional",
+      "emotion": "Legacy",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Duplication"
+    },
+    {
+      "id": 548,
+      "hook": "Para sa mga gusto ng negosyong kayang ipasa sa anak.",
+      "category": "Emotional",
+      "emotion": "Heritage",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Family"
+    },
+    {
+      "id": 549,
+      "hook": "Para sa mga gusto ng buhay na simple—pero mayaman sa oras.",
+      "category": "Emotional",
+      "emotion": "Simplicity",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Lifestyle"
+    },
+    {
+      "id": 550,
+      "hook": "Para sa mga gusto ng pagbabago—hindi sa susunod, ngayon na.",
+      "category": "Emotional",
+      "emotion": "Urgency",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Now"
+    },
+    {
+      "id": 551,
+      "hook": "Ready to lower your bill? Click the link.",
+      "category": "Call_To_Action",
+      "emotion": "Action",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Direct CTA"
+    },
+    {
+      "id": 552,
+      "hook": "Want to see the system in action? Watch the demo.",
+      "category": "Call_To_Action",
+      "emotion": "Curiosity",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Demo"
+    },
+    {
+      "id": 553,
+      "hook": "Gusto mo ng free copy ng eBook? Comment 'EBOOK'.",
+      "category": "Call_To_Action",
+      "emotion": "Freebie",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Lead Magnet"
+    },
+    {
+      "id": 554,
+      "hook": "Join our free webinar this weekend. Link in bio.",
+      "category": "Call_To_Action",
+      "emotion": "Event",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Webinar"
+    },
+    {
+      "id": 555,
+      "hook": "Sino gusto ng one-on-one consultation? Comment 'CONSULT'.",
+      "category": "Call_To_Action",
+      "emotion": "Personal",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Interactive"
+    },
+    {
+      "id": 556,
+      "hook": "Want to know your ideal package? Use our calculator—link below.",
+      "category": "Call_To_Action",
+      "emotion": "Tool",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Calculator"
+    },
+    {
+      "id": 557,
+      "hook": "Grab your N+ system now. ₱1,500 one-time, ₱300/month.",
+      "category": "Call_To_Action",
+      "emotion": "Buy Now",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Pricing"
+    },
+    {
+      "id": 558,
+      "hook": "Start your journey to energy efficiency today.",
+      "category": "Call_To_Action",
+      "emotion": "Inspiration",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Motivation"
+    },
+    {
+      "id": 559,
+      "hook": "Message us 'START' and we'll help you begin.",
+      "category": "Call_To_Action",
+      "emotion": "Easy",
+      "platform": "TikTok",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Direct"
+    },
+    {
+      "id": 560,
+      "hook": "Ready for lower bills and higher income? Click below.",
+      "category": "Call_To_Action",
+      "emotion": "Dual",
+      "platform": "Facebook Reels",
+      "language": "English",
+      "duration": "15-30 sec",
+      "angle": "Decision"
+    },
+    {
+      "id": 561,
+      "hook": "Yung 25 UF, pang-100-250 kWh. Saan ka belong?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Self-Assessment",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Quiz"
+    },
+    {
+      "id": 562,
+      "hook": "Yung 50 UF, pang-300-550 kWh. Check mo bill mo.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Self-Assessment",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Check"
+    },
+    {
+      "id": 563,
+      "hook": "Yung 100 UF, pang-800-1350 kWh. Malakas ka ba?",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Self-Assessment",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Challenge"
+    },
+    {
+      "id": 564,
+      "hook": "Yung device, hindi 'energy saver'—kasi totoo kami.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Honesty",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Truth"
+    },
+    {
+      "id": 565,
+      "hook": "Yung device, power efficiency enhancer. Tamang pangalan, tamang gamit.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Accuracy",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Naming"
+    },
+    {
+      "id": 566,
+      "hook": "Yung device, may 3-in-1 function: power correction, surge protection, voltage regulation.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Value",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Multi"
+    },
+    {
+      "id": 567,
+      "hook": "Yung device, tested sa init at bagyo. Pang-Pilipinas.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Durability",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "Local"
+    },
+    {
+      "id": 568,
+      "hook": "Yung device, hindi ka iiwan sa ere. May warranty, may support.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Trust",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "30-60 sec",
+      "angle": "Reliability"
+    },
+    {
+      "id": 569,
+      "hook": "Yung device, once installed, kalimutan mo na. Maintenance-free.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Convenience",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "15-30 sec",
+      "angle": "No Hassle"
+    },
+    {
+      "id": 570,
+      "hook": "Yung device, may ROHS compliance. Safe sa tao at kalikasan.",
+      "category": "Product_Energy_Efficiency",
+      "emotion": "Safety",
+      "platform": "YouTube Shorts",
+      "language": "English",
+      "duration": "30-60 sec",
+      "angle": "Eco"
+    },
+    {
+      "id": 571,
+      "hook": "Yung Residential Package, ₱5,498. Isang grocery, pang-matagalan na.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Comparison",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Value"
+    },
+    {
+      "id": 572,
+      "hook": "Yung Commercial Package, ₱13,778. Pwedeng pagsaluhan ng magkakaibigan.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Team",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Partnership"
+    },
+    {
+      "id": 573,
+      "hook": "Yung Industrial Package, ₱33,264. Pwedeng puhunan ng magkakapatid.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Family",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Siblings"
+    },
+    {
+      "id": 574,
+      "hook": "Yung referral bonus sa Residential, ₱400. Pwedeng pang-load ng isang buwan.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Practical",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Load"
+    },
+    {
+      "id": 575,
+      "hook": "Yung referral sa Commercial, ₱1,000. Pwedeng pang-gas ng isang linggo.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Practical",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Gas"
+    },
+    {
+      "id": 576,
+      "hook": "Yung referral sa Industrial, ₱2,500. Pwedeng pang-extra sa savings.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Savings",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Bank"
+    },
+    {
+      "id": 577,
+      "hook": "Yung One Leg Bonus, para sa mga hindi fan ng balancing. Eto na.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Relief",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Unique"
+    },
+    {
+      "id": 578,
+      "hook": "Yung capping system, para hindi ma-overpromise ang company. Sustainable.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Safety",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Long-term"
+    },
+    {
+      "id": 579,
+      "hook": "Yung reactivation, para may bagong goal ka every cycle. Hindi boring.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Fresh",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Renewal"
+    },
+    {
+      "id": 580,
+      "hook": "Yung subscription bonus, 2% hanggang 10 levels. Bumuo ka ng community.",
+      "category": "Distributor_Opportunity",
+      "emotion": "Community",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Residual"
+    },
+    {
+      "id": 581,
+      "hook": "Yung N+ system, may AI na gumagawa ng post mo. Ikaw, browse lang.",
+      "category": "N+_System_Automation",
+      "emotion": "Relax",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Content"
+    },
+    {
+      "id": 582,
+      "hook": "Yung N+ system, may AI na gumagawa ng reels. Trending ka agad.",
+      "category": "N+_System_Automation",
+      "emotion": "Trendy",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Viral"
+    },
+    {
+      "id": 583,
+      "hook": "Yung N+ system, may AI na gumagawa ng images. Pang-Pinterest, pang-post.",
+      "category": "N+_System_Automation",
+      "emotion": "Creative",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Visual"
+    },
+    {
+      "id": 584,
+      "hook": "Yung N+ system, may landing page na may video. Auto-explain.",
+      "category": "N+_System_Automation",
+      "emotion": "Ease",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Sales"
+    },
+    {
+      "id": 585,
+      "hook": "Yung N+ system, may lead capture. Hindi mo na kelangan mag-save ng number.",
+      "category": "N+_System_Automation",
+      "emotion": "Efficiency",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Leads"
+    },
+    {
+      "id": 586,
+      "hook": "Yung N+ system, may admin support. May aasahan ka.",
+      "category": "N+_System_Automation",
+      "emotion": "Support",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Human"
+    },
+    {
+      "id": 587,
+      "hook": "Yung N+ system, may community. May kadamay ka.",
+      "category": "N+_System_Automation",
+      "emotion": "Together",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Community"
+    },
+    {
+      "id": 588,
+      "hook": "Yung N+ system, may training. Hindi ka magugutom sa kaalaman.",
+      "category": "N+_System_Automation",
+      "emotion": "Learning",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Education"
+    },
+    {
+      "id": 589,
+      "hook": "Yung N+ system, may updates. Hindi mo kelangan mag-ayos ng tech.",
+      "category": "N+_System_Automation",
+      "emotion": "No Tech",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Maintenance"
+    },
+    {
+      "id": 590,
+      "hook": "Yung N+ system, may back-up. Hindi mawawala ang pinaghirapan mo.",
+      "category": "N+_System_Automation",
+      "emotion": "Security",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Data"
+    },
+    {
+      "id": 591,
+      "hook": "Yung tanong: 'Ano difference nyo sa iba?' Eto: 7 ways to earn, 1 system, 1 community.",
+      "category": "Objections_Trust",
+      "emotion": "Summary",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Unique"
+    },
+    {
+      "id": 592,
+      "hook": "Yung tanong: 'Bakit kayo nagtagal?' Kasi hindi kami nagmadali. Matagalan ang sistema.",
+      "category": "Objections_Trust",
+      "emotion": "Patience",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Longevity"
+    },
+    {
+      "id": 593,
+      "hook": "Yung tanong: 'Sulit ba?' Tanong namin: Sulit ba ang peace of mind?",
+      "category": "Objections_Trust",
+      "emotion": "Value",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Emotional"
+    },
+    {
+      "id": 594,
+      "hook": "Yung tanong: 'Madali ba?' Oo, madali kung may sistema. Hindi kung puro manual.",
+      "category": "Objections_Trust",
+      "emotion": "Clarity",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Ease"
+    },
+    {
+      "id": 595,
+      "hook": "Yung tanong: 'May patunay ba?' 3 years, 82 provinces, libo-libong users. Patunay na yun.",
+      "category": "Objections_Trust",
+      "emotion": "Proof",
+      "platform": "TikTok",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Scale"
+    },
+    {
+      "id": 596,
+      "hook": "Yung tanong: 'Ano mas gusto mo: may ceiling pero sustainable, o walang ceiling pero sisabog?'",
+      "category": "Objections_Trust",
+      "emotion": "Wisdom",
+      "platform": "Facebook Reels",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Choice"
+    },
+    {
+      "id": 597,
+      "hook": "Yung tanong: 'Paano kung hindi ako marunong magbenta?' Dito, sistema ang nagbebenta.",
+      "category": "Objections_Trust",
+      "emotion": "Relief",
+      "platform": "YouTube Shorts",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "No Sales"
+    },
+    {
+      "id": 598,
+      "hook": "Yung tanong: 'Paano kung mahiyain ako?' Dito, AI ang kausap ng prospect.",
+      "category": "Objections_Trust",
+      "emotion": "Comfort",
+      "platform": "TikTok",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Shy"
+    },
+    {
+      "id": 599,
+      "hook": "Yung tanong: 'Paano kung walang time?' Dito, automated halos lahat. Time-efficient.",
+      "category": "Objections_Trust",
+      "emotion": "Time",
+      "platform": "Facebook Reels",
+      "language": "Taglish",
+      "duration": "15-30 sec",
+      "angle": "Busy"
+    },
+    {
+      "id": 600,
+      "hook": "Yung tanong: 'Paano kung natatakot ako?' Same. Kaya may sistema, may community, may support.",
+      "category": "Objections_Trust",
+      "emotion": "Fear Addressed",
+      "platform": "YouTube Shorts",
+      "language": "Filipino",
+      "duration": "30-60 sec",
+      "angle": "Safety"
+    }
+  ]
+}
